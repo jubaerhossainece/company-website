@@ -9,7 +9,7 @@ export default function TeamMembers() {
   const teamMembers = [
     {
       id: "ai-developer",
-      name: "Sarah Chen",
+      name: "SM Asif Anam",
       role: "AI Developer",
       image: "/placeholder.svg?height=300&width=300",
       description:
