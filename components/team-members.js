@@ -73,7 +73,7 @@ export default function TeamMembers() {
           <Title level={2} className="text-4xl font-bold text-gray-900 mb-4">
             Meet Our Team
           </Title>
-          <Paragraph className="max-w-3xl mx-auto">
+          <Paragraph className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our diverse team of experts brings together years of experience in
             software development, AI, design, and project management.
           </Paragraph>
@@ -105,7 +105,7 @@ export default function TeamMembers() {
                   <Text className="text-blue-600 font-medium">
                     {member.role}
                   </Text>
-                  <Paragraph className="mt-3">
+                  <Paragraph className="text-gray-600 mt-3">
                     {member.description}
                   </Paragraph>
                 </Card>
