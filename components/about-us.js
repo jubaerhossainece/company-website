@@ -25,7 +25,7 @@ export default function AboutUs() {
         <Row gutter={[32, 32]} className="items-center">
           <Col xs={24} lg={12}>
             <img
-              src="/images/photo-1551434678-e076c223a692.jpeg?height=400&width=600"
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="About us"
               className="w-full h-auto rounded-lg shadow-lg"
             />

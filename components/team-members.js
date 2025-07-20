@@ -64,6 +64,15 @@ export default function TeamMembers() {
         "Infrastructure specialist ensuring reliable, scalable, and secure deployments.",
       skills: ["AWS", "Kubernetes", "CI/CD", "Terraform", "Monitoring"],
     },
+    {
+      id: "sm-asif-anam",
+      name: "SM Asif Anam",
+      role: "AI Safety Researcher, Multi-paper Author",
+      image: "/placeholder.svg?height=300&width=300",
+      description:
+        "AI researcher with a focus on safety systems and BIM integration.",
+      skills: ["AI", "BIM", "Python", "TensorFlow", "Research"],
+    },
   ];
 
   return (
