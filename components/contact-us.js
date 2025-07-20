@@ -14,7 +14,7 @@ export default function ContactUs() {
             <Title level={2} className="text-4xl font-bold text-gray-900 mb-4">
               Contact Us
             </Title>
-            <Paragraph className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <Paragraph className="intro-paragraph max-w-3xl mx-auto">
               Ready to start your next project? Get in touch with us today.
             </Paragraph>
           </div>
