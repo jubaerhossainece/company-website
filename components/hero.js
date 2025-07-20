@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Innovate. Build. Transform.
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
+          <p className="md:text-2xl mb-8 leading-relaxed">
             We're a cutting-edge software company specializing in AI solutions and custom software development.
             Transform your business with our innovative technology solutions.
           </p>
