@@ -79,7 +79,7 @@ export default function Services() {
           <Title level={2} className="text-4xl font-bold text-gray-900 mb-4">
             Our Services
           </Title>
-          <Paragraph className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <Paragraph className="intro-paragraph max-w-3xl mx-auto">
             We offer comprehensive AI and software development services to help
             your business stay ahead of the competition.
           </Paragraph>
