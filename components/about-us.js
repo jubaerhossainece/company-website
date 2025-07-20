@@ -25,7 +25,7 @@ export default function AboutUs() {
         <Row gutter={[32, 32]} className="items-center">
           <Col xs={24} lg={12}>
             <img
-              src="/placeholder.svg?height=400&width=600"
+              src="/images/photo-1551434678-e076c223a692.jpeg?height=400&width=600"
               alt="About us"
               className="w-full h-auto rounded-lg shadow-lg"
             />
