@@ -15,10 +15,7 @@ export default function AboutUs() {
           <Title level={2} className="text-4xl font-bold text-gray-900 mb-4">
             About TechCorp
           </Title>
-          <Paragraph
-            className="text-gray-600 max-w-3xl mx-auto"
-            style={{ fontSize: "1.5rem" }}
-          >
+          <Paragraph className="about-us-paragraph max-w-3xl mx-auto">
             We are a forward-thinking software company dedicated to delivering
             innovative AI and software solutions that empower businesses to
             thrive in the digital age.
