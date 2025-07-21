@@ -8,26 +8,37 @@ const { Title, Paragraph, Text } = Typography;
 export default function TeamMembers() {
   const teamMembers = [
     {
-      id: "ai-developer",
+      id: "sm-asif-anam",
       name: "SM Asif Anam",
-      role: "AI Developer",
-      image: "/placeholder.svg?height=300&width=300",
+      role: "AI Safety Researcher, Multi-paper Author",
+      image: "/images/anam.jpg?height=300&width=300",
       description:
-        "Specializes in machine learning and deep learning solutions with 6+ years of experience.",
-      skills: ["Python", "TensorFlow", "PyTorch", "NLP", "Computer Vision"],
+        "AI Engineer with 6+ years of experience delivering end-to-end machine learning and deep learning solutions. Expertise in natural language processing, computer vision, and deploying scalable AI models into production environments.",
+      skills: [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "NLP",
+        "Computer Vision",
+        "Deep Learning",
+        "Model Deployment",
+        "Scikit-learn",
+        "MLOps",
+        "Data Engineering",
+      ],
     },
     {
       id: "software-developer",
-      name: "Michael Rodriguez",
+      name: "Md. Jubaer Hossain",
       role: "Software Developer",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/jubaer-hossain-SE2.jpg?height=300&width=300",
       description:
-        "Full-stack developer with expertise in modern web technologies and scalable architectures.",
-      skills: ["React", "Node.js", "JavaScript", "AWS", "Docker"],
+        "Full-stack developer with 6+ years of experience, expertise in modern web technologies and scalable architectures.",
+      skills: ["PHP", "Laravel", "JavaScript", "AWS", "Docker", "Mysql", ],
     },
     {
       id: "project-manager",
-      name: "Emily Johnson",
+      name: "Abu Sufian",
       role: "Project Manager",
       image: "/placeholder.svg?height=300&width=300",
       description:
@@ -42,36 +53,17 @@ export default function TeamMembers() {
     },
     {
       id: "ui-ux-designer",
-      name: "David Kim",
+      name: "Mohin Rahman",
       role: "UI/UX Designer",
       image: "/placeholder.svg?height=300&width=300",
       description:
         "Creative designer focused on user-centered design and exceptional user experiences.",
       skills: [
-        "Figma",
-        "Adobe Creative Suite",
-        "Prototyping",
-        "User Research",
-        "Design Systems",
+        "Ui-Ux design",
+        "Motion Graphic Design",
+        "Video editing",
+        "Branding",
       ],
-    },
-    {
-      id: "devops-engineer",
-      name: "Alex Thompson",
-      role: "DevOps Engineer",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "Infrastructure specialist ensuring reliable, scalable, and secure deployments.",
-      skills: ["AWS", "Kubernetes", "CI/CD", "Terraform", "Monitoring"],
-    },
-    {
-      id: "sm-asif-anam",
-      name: "SM Asif Anam",
-      role: "AI Safety Researcher, Multi-paper Author",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "AI researcher with a focus on safety systems and BIM integration.",
-      skills: ["AI", "BIM", "Python", "TensorFlow", "Research"],
     },
   ];
 
