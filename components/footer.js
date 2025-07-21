@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              TechCompany
+              Shomoysoft
             </h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Innovative software solutions and AI services to transform your business and drive growth in the digital
@@ -117,11 +117,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-3">
               <MapPin className="h-5 w-5 text-blue-400" />
-              <span className="text-gray-300">123 Tech Street, San Francisco, CA</span>
+              <span className="text-gray-300">16/1/1 Tolarbagh Mirpur - 1, Dhaka - 1216, Bangladesh</span>
             </div>
             <div className="flex items-center justify-center md:justify-start space-x-3">
               <Phone className="h-5 w-5 text-blue-400" />
-              <span className="text-gray-300">+1 (555) 123-4567</span>
+              <span className="text-gray-300">+8801754633041</span>
             </div>
             <div className="flex items-center justify-center md:justify-start space-x-3">
               <Mail className="h-5 w-5 text-blue-400" />
@@ -133,7 +133,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} TechCompany. All rights reserved. |
+            © {new Date().getFullYear()} Shomoysoft.com. All rights reserved. |
             <Link href="/privacy" className="hover:text-white ml-2">
               Privacy Policy
             </Link>{" "}
