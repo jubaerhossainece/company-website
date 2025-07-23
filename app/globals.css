@@ -147,6 +147,6 @@ body {
 }
 
 .intro-paragraph {
-  font-size: 1.25rem; /* text-xl */
+  font-size: 1.25rem !important; /* text-xl */
   color: #6b7280; /* gray-500 */
 }
