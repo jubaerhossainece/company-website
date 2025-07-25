@@ -11,7 +11,7 @@ export default function TeamMembers() {
       id: "sm-asif-anam",
       name: "SM Asif Anam",
       role: "AI Safety Researcher, Multi-paper Author",
-      image: "/images/anam.jpg?height=300&width=300",
+      image: "/images/team-members/anam.jpg?height=300&width=300",
       description:
         "AI Engineer with 6+ years of experience delivering end-to-end machine learning and deep learning solutions. Expertise in natural language processing, computer vision, and deploying scalable AI models into production environments.",
       skills: [
@@ -28,19 +28,19 @@ export default function TeamMembers() {
       ],
     },
     {
-      id: "software-developer",
+      id: "md-jubaer-hossain",
       name: "Md. Jubaer Hossain",
       role: "Software Developer",
-      image: "/images/jubaer-hossain-SE2.jpg?height=300&width=300",
+      image: "/images/team-members/jubaer-hossain-SE2.jpg?height=300&width=300",
       description:
         "Full-stack developer with 6+ years of experience, expertise in modern web technologies and scalable architectures.",
-      skills: ["PHP", "Laravel", "JavaScript", "AWS", "Docker", "Mysql", ],
+      skills: ["PHP", "Laravel", "JavaScript", "AWS", "Docker", "Mysql"],
     },
     {
-      id: "project-manager",
+      id: "abu-sufian-manager",
       name: "Abu Sufian",
       role: "Project Manager",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/team-members/sufian.jpeg?height=300&width=300",
       description:
         "Experienced project manager ensuring smooth delivery and client satisfaction.",
       skills: [
@@ -63,6 +63,25 @@ export default function TeamMembers() {
         "Motion Graphic Design",
         "Video editing",
         "Branding",
+      ],
+    },
+
+    {
+      id: "tasfia-rahman",
+      name: "Tasfia Rahman",
+      role: "UI/UX Designer",
+      image: "/images/team-members/tasfia.png?height=300&width=300",
+      description:
+        "Creative UI/UX designer with experience in crafting user-centric mobile and web interfaces. Skilled in turning ideas into visually appealing and functional designs that enhance user experience.",
+      skills: [
+        "Figma",
+        "Wireframing",
+        "Prototyping",
+        "User Research",
+        "UI Design",
+        "UX Design",
+        "Design Thinking",
+        "Responsive Design",
       ],
     },
   ];
