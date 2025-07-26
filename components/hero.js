@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Brain, Zap } from "lucide-react"
+import { Code, Brain, Zap } from "lucide-react"
+import { siteConfig } from "@/config/site"
 
 export default function Hero() {
   return (
@@ -11,11 +11,10 @@ export default function Hero() {
             Innovate. Build. Transform.
           </h1>
           <p className="intro-paragraph md:text-2xl mb-8 leading-relaxed">
-            We're a cutting-edge software company specializing in AI solutions and custom software development.
-            Transform your business with our innovative technology solutions.
+            {siteConfig.company.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+            {/* <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
               Get Started <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
@@ -24,7 +23,7 @@ export default function Hero() {
               className="border-white text-white hover:bg-white hover:text-black px-8 py-3 bg-transparent"
             >
               View Our Work
-            </Button>
+            </Button> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-lg">

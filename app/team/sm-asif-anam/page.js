@@ -1,10 +1,31 @@
-"use client"
+"use client";
 
-import { Button, Card, Row, Col, Typography, Tag, Avatar, Progress } from "antd"
-import { ArrowLeft, Mail, Linkedin, Award, Calendar, MapPin, Code, ExternalLink, FileText } from "lucide-react"
-import Link from "next/link"
+import { siteConfig } from "@/config/site";
+import {
+  Button,
+  Card,
+  Row,
+  Col,
+  Typography,
+  Tag,
+  Avatar,
+  Progress,
+} from "antd";
+import {
+  ArrowLeft,
+  Mail,
+  Linkedin,
+  Award,
+  Calendar,
+  MapPin,
+  Code,
+  ExternalLink,
+  FileText,
+} from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
-const { Title, Paragraph, Text } = Typography
+const { Title, Paragraph, Text } = Typography;
 
 export default function AnamPortfolioPage() {
   const member = {
@@ -36,12 +57,68 @@ export default function AnamPortfolioPage() {
     ],
     projects: [
       {
+        title: "Unified AI + BIM Safety Ecosystem",
+        description:
+          "Conceptual smart city safety framework combining AI and BIM for real-time monitoring of fire, structural safety, and site behavior.",
+        image: "/images/anam/smart-city-ai.png",
+        technologies: [
+          "BIM",
+          "AI/ML",
+          "IoT",
+          "Firebase",
+          "TensorFlow",
+          "OpenCV",
+        ],
+        features: [
+          "AI predictive analytics",
+          "BIM digital twin integration",
+          "IoT sensor networks",
+          "Unified monitoring dashboard",
+          "Real-time anomaly detection",
+          "Smart city applications",
+        ],
+        impact:
+          "Framework for smart apartment complexes, industrial plants, and educational institutions",
+      },
+      {
+        title: "AI-Integrated BIM Fire Alert System",
+        description:
+          "Research project developing automated, real-time fire alert system using Building Information Modeling (BIM) integrated with AI capabilities.",
+        url: "https://www.researchgate.net/profile/Mizanoor-Rahman-3/publication/352933727_Development_of_Building_Information_Modeling_BIM-based_Real-time_Fire_Alert_System_to_Reduce_Fire_Impact_in_Bangladesh/links/60e01d7f299bf1ea9edb342b/Development-of-Building-Information-Modeling-BIM-based-Real-time-Fire-Alert-System-to-Reduce-Fire-Impact-in-Bangladesh.pdf",
+        image: "/images/anam/bim-fire-system.png",
+        technologies: [
+          "BIM",
+          "AI/ML",
+          "IoT Sensors",
+          "Android",
+          "TensorFlow",
+          "Autodesk Revit",
+        ],
+        features: [
+          "Real-time fire detection using IoT sensors",
+          "AI-enhanced analytics for early identification",
+          "3D visual mapping on BIM model",
+          "Automatic alert transmission",
+          "Mobile app interface",
+          "Cloud-based alert routing",
+        ],
+        impact:
+          "Published in Jordan Journal of Civil Engineering, provides scalable solution for urban fire safety",
+      },
+      {
         title: "Tryotel - Travel Booking Platform",
         description:
           "Complete travel booking solution offering domestic and international flight tickets, curated tour packages, and mobile-first experience for users across Bangladesh.",
         url: "https://tryotel.com/",
-        image: "/images/tryotel-dashboard.png",
-        technologies: ["Laravel", "React", "Flutter", "MySQL", "AWS", "Payment Gateway"],
+        image: "/images/anam/travel-booking-platform.png",
+        technologies: [
+          "Laravel",
+          "React",
+          "Flutter",
+          "MySQL",
+          "AWS",
+          "Payment Gateway",
+        ],
         features: [
           "Flight Booking (Domestic & International)",
           "Curated Tour Package Listings",
@@ -55,29 +132,18 @@ export default function AnamPortfolioPage() {
           "Trusted by thousands of users, simplified travel for Bangladeshi customers through digital transformation",
       },
       {
-        title: "AI-Integrated BIM Fire Alert System",
-        description:
-          "Research project developing automated, real-time fire alert system using Building Information Modeling (BIM) integrated with AI capabilities.",
-        url: "https://www.researchgate.net/profile/Mizanoor-Rahman-3/publication/352933727_Development_of_Building_Information_Modeling_BIM-based_Real-time_Fire_Alert_System_to_Reduce_Fire_Impact_in_Bangladesh/links/60e01d7f299bf1ea9edb342b/Development-of-Building-Information-Modeling-BIM-based-Real-time-Fire-Alert-System-to-Reduce-Fire-Impact-in-Bangladesh.pdf",
-        image: "/images/bim-fire-system.png",
-        technologies: ["BIM", "AI/ML", "IoT Sensors", "Android", "TensorFlow", "Autodesk Revit"],
-        features: [
-          "Real-time fire detection using IoT sensors",
-          "AI-enhanced analytics for early identification",
-          "3D visual mapping on BIM model",
-          "Automatic alert transmission",
-          "Mobile app interface",
-          "Cloud-based alert routing",
-        ],
-        impact: "Published in Jordan Journal of Civil Engineering, provides scalable solution for urban fire safety",
-      },
-      {
         title: "Pride Limited - Women's eCommerce Platform",
         description:
           "Fully functional eCommerce website tailored for selling women's products across Bangladesh with secure shopping and local payment integration.",
         url: "https://www.pride-limited.com",
-        image: "/images/pride-ecommerce.png",
-        technologies: ["WordPress", "WooCommerce", "PHP", "MySQL", "Payment Gateway"],
+        image: "/images/anam/pride-ecommerce.png",
+        technologies: [
+          "WordPress",
+          "WooCommerce",
+          "PHP",
+          "MySQL",
+          "Payment Gateway",
+        ],
         features: [
           "Product Catalog with Filters",
           "Cart & Checkout System",
@@ -86,23 +152,8 @@ export default function AnamPortfolioPage() {
           "Mobile-Responsive Design",
           "SEO-Optimized Pages",
         ],
-        impact: "Successfully launched eCommerce platform serving women's fashion market in Bangladesh",
-      },
-      {
-        title: "Unified AI + BIM Safety Ecosystem",
-        description:
-          "Conceptual smart city safety framework combining AI and BIM for real-time monitoring of fire, structural safety, and site behavior.",
-        image: "/images/smart-city-ai.png",
-        technologies: ["BIM", "AI/ML", "IoT", "Firebase", "TensorFlow", "OpenCV"],
-        features: [
-          "AI predictive analytics",
-          "BIM digital twin integration",
-          "IoT sensor networks",
-          "Unified monitoring dashboard",
-          "Real-time anomaly detection",
-          "Smart city applications",
-        ],
-        impact: "Framework for smart apartment complexes, industrial plants, and educational institutions",
+        impact:
+          "Successfully launched eCommerce platform serving women's fashion market in Bangladesh",
       },
     ],
     publications: [
@@ -116,7 +167,16 @@ export default function AnamPortfolioPage() {
         url: "https://www.researchgate.net/profile/Mizanoor-Rahman-3/publication/352933727",
       },
     ],
-  }
+  };
+
+  const [expandedFeatures, setExpandedFeatures] = useState({});
+
+  const toggleFeatures = (projectIndex) => {
+    setExpandedFeatures((prev) => ({
+      ...prev,
+      [projectIndex]: !prev[projectIndex],
+    }));
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -126,7 +186,9 @@ export default function AnamPortfolioPage() {
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center">
               <Code className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">TechCorp</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">
+                {siteConfig.company.name}
+              </span>
             </Link>
             <Link href="/">
               <Button type="text" icon={<ArrowLeft className="h-4 w-4" />}>
@@ -148,10 +210,15 @@ export default function AnamPortfolioPage() {
               <Title level={1} className="text-white text-4xl font-bold mb-2">
                 {member.name}
               </Title>
-              <Title level={3} className="text-blue-200 text-2xl font-medium mb-4">
+              <Title
+                level={3}
+                className="text-blue-200 text-2xl font-medium mb-4"
+              >
                 {member.role}
               </Title>
-              <Paragraph className="text-blue-100 text-lg mb-6">{member.bio}</Paragraph>
+              <Paragraph className="text-blue-100 text-lg mb-6">
+                {member.bio}
+              </Paragraph>
               <div className="flex flex-wrap gap-4 text-blue-100">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
@@ -174,7 +241,10 @@ export default function AnamPortfolioPage() {
       {/* Skills Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Title level={2} className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <Title
+            level={2}
+            className="text-3xl font-bold text-gray-900 mb-8 text-center"
+          >
             Skills & Expertise
           </Title>
           <Row gutter={[24, 24]}>
@@ -196,12 +266,18 @@ export default function AnamPortfolioPage() {
       {/* Featured Projects Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Title level={2} className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <Title
+            level={2}
+            className="text-3xl font-bold text-gray-900 mb-8 text-center"
+          >
             Featured Projects
           </Title>
           <div className="space-y-12">
             {member.projects.map((project, index) => (
-              <Card key={index} className="shadow-lg border-l-4 border-l-blue-600 overflow-hidden">
+              <Card
+                key={index}
+                className="shadow-lg border-l-4 border-l-blue-600 overflow-hidden"
+              >
                 <Row gutter={[32, 32]} align="middle">
                   <Col xs={24} lg={10}>
                     <div className="relative">
@@ -211,7 +287,8 @@ export default function AnamPortfolioPage() {
                         className="w-full h-64 object-cover rounded-lg shadow-md"
                         onError={(e) => {
                           e.target.src =
-                            "/placeholder.svg?height=256&width=400&text=" + encodeURIComponent(project.title)
+                            "/placeholder.svg?height=256&width=400&text=" +
+                            encodeURIComponent(project.title);
                         }}
                       />
                       <div className="absolute top-4 right-4">
@@ -231,10 +308,15 @@ export default function AnamPortfolioPage() {
                   </Col>
                   <Col xs={24} lg={14}>
                     <div className="h-full flex flex-col">
-                      <Title level={3} className="text-xl font-semibold text-gray-900 mb-3">
+                      <Title
+                        level={3}
+                        className="text-xl font-semibold text-gray-900 mb-3"
+                      >
                         {project.title}
                       </Title>
-                      <Paragraph className="text-gray-600 mb-4 text-base flex-grow">{project.description}</Paragraph>
+                      <Paragraph className="text-gray-600 mb-4 text-base flex-grow">
+                        {project.description}
+                      </Paragraph>
 
                       <div className="mb-4">
                         <Text strong className="text-gray-900">
@@ -254,17 +336,26 @@ export default function AnamPortfolioPage() {
                           Key Features:
                         </Text>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                          {project.features.slice(0, 4).map((feature, featureIndex) => (
-                            <div key={featureIndex} className="flex items-start">
-                              <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-2 flex-shrink-0"></div>
-                              <Text className="text-gray-600 text-sm">{feature}</Text>
-                            </div>
-                          ))}
+                          {(expandedFeatures[index] ? project.features : project.features.slice(0, 4)).map(
+                            (feature, featureIndex) => (
+                              <div key={featureIndex} className="flex items-start">
+                                <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-2 flex-shrink-0"></div>
+                                <Text className="text-gray-600 text-sm">{feature}</Text>
+                              </div>
+                            ),
+                          )}
                         </div>
                         {project.features.length > 4 && (
-                          <Text className="text-blue-600 text-sm mt-2">
-                            +{project.features.length - 4} more features
-                          </Text>
+                          <Button
+                            type="link"
+                            size="small"
+                            onClick={() => toggleFeatures(index)}
+                            className="text-purple-600 p-0 h-auto mt-2"
+                          >
+                            {expandedFeatures[index]
+                              ? `Show Less`
+                              : `+${project.features.length - 4} more features`}
+                          </Button>
                         )}
                       </div>
 
@@ -273,7 +364,9 @@ export default function AnamPortfolioPage() {
                           <Text strong className="text-blue-800">
                             Impact:{" "}
                           </Text>
-                          <Text className="text-blue-700">{project.impact}</Text>
+                          <Text className="text-blue-700">
+                            {project.impact}
+                          </Text>
                         </div>
                       )}
                     </div>
@@ -288,7 +381,10 @@ export default function AnamPortfolioPage() {
       {/* Publications Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Title level={2} className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <Title
+            level={2}
+            className="text-3xl font-bold text-gray-900 mb-8 text-center"
+          >
             Research Publications
           </Title>
           <Row gutter={[24, 24]}>
@@ -299,7 +395,10 @@ export default function AnamPortfolioPage() {
                     <div className="flex items-start">
                       <FileText className="h-6 w-6 text-green-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
-                        <Title level={4} className="text-lg font-semibold text-gray-900 mb-2">
+                        <Title
+                          level={4}
+                          className="text-lg font-semibold text-gray-900 mb-2"
+                        >
                           {publication.title}
                         </Title>
                         <div className="space-y-1 text-gray-600">
@@ -338,7 +437,10 @@ export default function AnamPortfolioPage() {
       {/* Achievements Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Title level={2} className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <Title
+            level={2}
+            className="text-3xl font-bold text-gray-900 mb-8 text-center"
+          >
             Achievements & Recognition
           </Title>
           <Row gutter={[24, 24]}>
@@ -363,7 +465,8 @@ export default function AnamPortfolioPage() {
             Get in Touch with Anam
           </Title>
           <Paragraph className="text-blue-100 text-lg mb-8">
-            Interested in AI research, full-stack development, or BIM integration projects? Let's collaborate!
+            Interested in AI research, full-stack development, or BIM
+            integration projects? Let's collaborate!
           </Paragraph>
           <div className="flex justify-center gap-4">
             <Button
@@ -385,5 +488,5 @@ export default function AnamPortfolioPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -52,6 +52,14 @@ export default function TeamMembers() {
       ],
     },
     {
+      id: "tamanna-tanni",
+      name: "Tamanna Molla Tanni",
+      role: "Software Quality Assurance Engineer",
+      image: "/placeholder.svg?height=300&width=300",
+      bio: "Dedicated QA Engineer with expertise in manual and automated testing across multiple domains",
+      skills: ["Manual Testing", "Test Automation", "Playwright", "JIRA", "Performance Testing"],
+    },
+    {
       id: "ui-ux-designer",
       name: "Mohin Rahman",
       role: "UI/UX Designer",

@@ -4,6 +4,7 @@ import { Button, Card, Row, Col, Typography, Tag, Avatar, Progress } from "antd"
 import { ArrowLeft, Mail, Linkedin, Award, Calendar, MapPin, Code, ExternalLink, Monitor, Palette } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import { siteConfig } from "../../../config/site"
 
 const { Title, Paragraph, Text } = Typography
 
@@ -164,7 +165,7 @@ export default function UIUXDesignerPortfolioPage() {
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center">
               <Code className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">TechCorp</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">{siteConfig.company.name}</span>
             </Link>
             <Link href="/">
               <Button type="text" icon={<ArrowLeft className="h-4 w-4" />}>

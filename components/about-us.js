@@ -3,6 +3,7 @@
 import { Row, Col, Typography } from "antd"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { siteConfig } from "@/config/site"
 
 const { Title, Paragraph, Text } = Typography
 
@@ -13,7 +14,7 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <Title level={2} className="text-4xl font-bold text-gray-900 mb-4">
-            About TechCorp
+            About {siteConfig.company.tagline}
           </Title>
           <Paragraph className="intro-paragraph max-w-3xl mx-auto">
             We are a forward-thinking software company dedicated to delivering
