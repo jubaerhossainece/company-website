@@ -459,34 +459,6 @@ export default function AnamPortfolioPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-700">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Title level={2} className="text-white text-3xl font-bold mb-4">
-            Get in Touch with Anam
-          </Title>
-          <Paragraph className="text-blue-100 text-lg mb-8">
-            Interested in AI research, full-stack development, or BIM
-            integration projects? Let's collaborate!
-          </Paragraph>
-          <div className="flex justify-center gap-4">
-            <Button
-              type="primary"
-              size="large"
-              icon={<Mail className="h-4 w-4" />}
-              className="bg-white text-blue-600 border-white hover:bg-gray-100"
-            >
-              Send Email
-            </Button>
-            <Button
-              size="large"
-              icon={<Linkedin className="h-4 w-4" />}
-              className="text-white border-white hover:bg-white hover:text-blue-600"
-            >
-              LinkedIn
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
