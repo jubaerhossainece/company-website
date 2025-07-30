@@ -55,7 +55,7 @@ export default function TeamMembers() {
       id: "tamanna-tanni",
       name: "Tamanna Molla Tanni",
       role: "Software Quality Assurance Engineer",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/team-members/tanni.jpeg?height=300&width=300",
       bio: "Dedicated QA Engineer with expertise in manual and automated testing across multiple domains",
       skills: ["Manual Testing", "Test Automation", "Playwright", "JIRA", "Performance Testing"],
     },
@@ -73,7 +73,6 @@ export default function TeamMembers() {
         "Branding",
       ],
     },
-
     {
       id: "tasfia-rahman",
       name: "Tasfia Rahman",

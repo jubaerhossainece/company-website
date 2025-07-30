@@ -25,7 +25,7 @@ export default function TamannaPortfolioPage() {
   const member = {
     name: "Tamanna Molla Tanni",
     role: "Software Quality Assurance Engineer",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/team-members/tanni.jpeg?height=400&width=400",
     bio: "Dedicated and detail-oriented Software Quality Assurance Engineer with experience in manual and automated testing. Strong understanding of QA methodologies and a commitment to continuous learning and improvement.",
     location: "Dhaka, Bangladesh",
     experience: "3+ years",
