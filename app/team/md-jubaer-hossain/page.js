@@ -522,7 +522,7 @@ export default function JubaerPortfolioPage() {
             Get in Touch with Jubaer
           </Title>
           <Paragraph className="text-blue-100 text-lg mb-8">
-            Looking for a backend specialist for your next project? Let's discuss how I can help build scalable
+            Looking for a backend specialist for your next project? Let&apos;s discuss how I can help build scalable
             solutions!
           </Paragraph>
           <div className="flex justify-center gap-4">

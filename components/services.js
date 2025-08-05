@@ -3,7 +3,7 @@
 import { Button, Card, Row, Col, Typography } from "antd"
 import { ArrowRight, Code, Brain } from "lucide-react"
 import Link from "next/link"
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 export default function Services() {
   const aiServices = [

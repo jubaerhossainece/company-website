@@ -2,10 +2,9 @@
 
 import { Row, Col, Typography } from "antd"
 import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 import { siteConfig } from "@/config/site"
 
-const { Title, Paragraph, Text } = Typography
+const { Title, Paragraph } = Typography
 
 
 export default function AboutUs() {

@@ -3,15 +3,11 @@
 import { Button, Card, Row, Col, Typography, Tag, Avatar, Progress, Timeline } from "antd"
 import {
   ArrowLeft,
-  Mail,
-  Linkedin,
   Award,
   Calendar,
   MapPin,
   Code,
   ExternalLink,
-  Phone,
-  User,
   TestTube,
   Shield,
 } from "lucide-react"

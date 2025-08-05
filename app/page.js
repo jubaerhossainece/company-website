@@ -4,7 +4,6 @@ import Services from "@/components/services"
 import TeamMembers from "@/components/team-members"
 import ContactUs from "@/components/contact-us"
 import Footer from "@/components/footer"
-import { siteConfig } from "@/config/site"
 
 export default function HomePage() {
   return (

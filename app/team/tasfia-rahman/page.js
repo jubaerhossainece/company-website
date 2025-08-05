@@ -1,7 +1,7 @@
 "use client"
 
 import { Button, Card, Row, Col, Typography, Tag, Avatar, Progress } from "antd"
-import { ArrowLeft, Mail, Linkedin, Award, Calendar, MapPin, Code, ExternalLink, Monitor, Palette } from "lucide-react"
+import { ArrowLeft, Mail, Award, Calendar, MapPin, Code, ExternalLink, Monitor, Palette } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { siteConfig } from "../../../config/site"

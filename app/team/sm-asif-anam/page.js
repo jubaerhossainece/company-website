@@ -14,7 +14,6 @@ import {
 import {
   ArrowLeft,
   Mail,
-  Linkedin,
   Award,
   Calendar,
   MapPin,
